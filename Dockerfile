@@ -1,8 +1,7 @@
 FROM tutum/apache-php:latest
 
 WORKDIR /
-RUN apt-get update && \
-	rm -rf /app && \
+RUN rm -rf /app && \
 	mkdir /app && \
     rm -rf /var/lib/apt/lists/*
 	
